@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <p class="logo">fabricad</p>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#">DESPRE</a></li>
+          <li><a href="projects.html">PROIECTE </a></li>
+          <li><a href="products.html">PRODUSE </a></li>
+          <li>
+            <svg
+              class="cart"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <picture class="image-container">
+        <img src="img/pic1.jpg" id="content1" class="background active" />
+        <img src="img/pic2.jpg" id="content2" class="background" />
+        <img src="img/pic3.jpg" id="content3" class="background" />
+        <img src="img/pic4.jpg" id="content4" class="background" />
+      </picture>
+
+      <div class="slide-text">
+        <h1>mobilier</h1>
+        <h2>debitari CNC, proiectare 3D</h2>
+      </div>
+
+      <div class="dot-container">
+        <button onclick="dot(1)"></button>
+        <button onclick="dot(2)"></button>
+        <button onclick="dot(3)"></button>
+        <button onclick="dot(4)"></button>
+      </div>
+
+      <button id="prev" onclick="prev()">&lt</button>
+      <button id="next" onclick="next()">&gt</button>
+    </div>
+
+    <div class="pula">
+      <span>PRODUSE</span>
+    </div>
+
+    <article>
+      <div class="main-container">
+        <div class="product-container">
+          <div class="card-container">
+            <div class="product-img">
+              <img src="img/img4.jpg" class="prod" />
+            </div>
+            <div class="product-name">
+              <h3>Lorem, ipsum.</h3>
+            </div>
+            <div class="product-price">
+              <h3>13 euro</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-container">
+          <div class="card-container">
+            <div class="product-img">
+              <img src="img/img8.jpg" class="prod" />
+            </div>
+            <div class="product-name">
+              <h3>Lorem, ipsum.</h3>
+            </div>
+            <div class="product-price">
+              <h3>13 euro</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-container">
+          <div class="card-container">
+            <div class="product-img">
+              <img src="img/img2.jpg" class="prod" />
+            </div>
+            <div class="product-name">
+              <h3>Lorem, ipsum.</h3>
+            </div>
+            <div class="product-price">
+              <h3>13 euro</h3>
+            </div>
+          </div>
+        </div>
+        <div class="product-container">
+          <div class="card-container">
+            <div class="product-img">
+              <img src="img/img3.jpg" class="prod" />
+            </div>
+            <div class="product-name">
+              <h3>Lorem, ipsum.</h3>
+            </div>
+            <div class="product-price">
+              <h3>13 euro</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="pulaa">
+      <span>PROIECTE</span>
+    </div>
+
+    <!-- <section class="service-container">
+      <div class="container-grid">
+        <div class="text-box">
+          <h1>DEBITARI CNC</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+            nesciunt<br />
+            amet incidunt ducimus nobis, dolorum laboriosam neque.
+          </p>
+        </div>
+        <div class="logo-box"><img src="img/icon1.png" /></div>
+      </div>
+
+      <div class="container-grid">
+        <div class="logo-box"><img src="img/icon2.png" /></div>
+        <div class="text-box">
+          <h1>MOBILA LA COMANDA</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+            nesciunt<br />
+            amet incidunt ducimus nobis, dolorum laboriosam neque.
+          </p>
+        </div>
+      </div>
+
+      <div class="container-grid">
+        <div class="text-box">
+          <h1>GRAVARI LASER</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+            nesciunt<br />
+            amet incidunt ducimus nobis, dolorum laboriosam neque.
+          </p>
+        </div>
+        <div class="logo-box"><img src="img/icon3.png" /></div>
+      </div>
+
+      <div class="line"></div>
+    </section> -->
+
+    <section>
+      <div class="work-container">
+        <div class="work-list">
+          <!-- <figure class="work-item"><img src="img/img5.jpg" alt="" /></figure> -->
+          <!-- <figure class="work-item"><img src="img/img6.jpg" alt="" /></figure> -->
+          <!-- <figure class="work-item"><img src="img/img9.jpg" alt="" /></figure> -->
+          <figure class="item-container">
+            <img class="work-item" src="img/img1.jpg" alt="" />
+          </figure>
+          <figure class="item-container">
+            <img class="work-item" src="img/img2.jpg" alt="" />
+          </figure>
+          <figure class="item-container">
+            <img class="work-item" src="img/img3.jpg" alt="" />
+          </figure>
+          <figure class="item-container">
+            <img class="work-item" src="img/img4.jpg" alt="" />
+          </figure>
+          <figure class="item-container">
+            <img class="work-item" src="img/img7.jpg" alt="" />
+          </figure>
+          <figure class="item-container">
+            <img class="work-item" src="img/img8.jpg" alt="" />
+          </figure>
+          <figure class="item-container">
+            <img class="work-item" src="img/img10.jpg" alt="" />
+          </figure>
+          <figure class="item-container">
+            <img class="work-item" src="img/img11.jpg" alt="" />
+          </figure>
+          <figure class="item-container">
+            <img class="work-item" src="img/img12.jpg" alt="" />
+          </figure>
+        </div>
+
+        <div class="see-more">
+          <a href="projects.html" class=""> mai multe imagini</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <div class="footer-box">
+        <h1 class="logo-footer">Fabricad</h1>
+        <ul>
+          <li><ion-icon name="logo-facebook"></ion-icon></li>
+          <li><ion-icon name="logo-instagram"></ion-icon></li>
+        </ul>
+        <p>copyright @ 2022 by fabricad.serv.All rights reserved</p>
+      </div>
+
+      <div class="footer-box">
+        <h1>Despre noi</h1>
+        <p>
+          Locatia sediul fabrica se afla in barai, Cluj Napoca.<br />
+          lucram cu plywood, PAL, fondat in 2018 <br />suscipit ipsum odit
+          reiciendis.
+        </p>
+      </div>
+
+      <div class="footer-box">
+        <h1>contact</h1>
+        <p>
+          098-093-933<br />
+          098-093-933<br />
+          cluj napoca, barai <br />
+          fabricad@gmail.com
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
